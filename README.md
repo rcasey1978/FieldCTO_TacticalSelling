@@ -1,0 +1,60 @@
+# Field CTO X-Arch Selling — Executive Business Case & Plan
+
+> **Elevator pitch.** Cisco's acquisition of Splunk created the industry's most complete portfolio spanning secure networking, full-stack observability, and security operations — but the field still sells it in architectural silos. This pack proposes a **Field CTO seller group**: a small, senior, technically credible cadre chartered to lead **cross-architecture (X-Arch)** deals in a focused set of industry verticals, translating C-suite business outcomes into multi-architecture Cisco + Splunk solutions that no single BU seller can assemble alone. The result is bigger, stickier, higher-margin deals and faster Splunk cross-sell.
+
+---
+
+## What this pack is
+
+A leadership-ready **executive business case** to fund and stand up the Field CTO seller group, plus the supporting requirements, vertical solution map, operating model, financial model, and rollout roadmap needed to make an approval decision.
+
+**Audience:** Sales leadership, GTM strategy, and finance sponsors who can approve headcount and budget.
+
+**Decision requested:** Approve a funded pilot (see [`01-executive-business-case.md`](01-executive-business-case.md) → "The Ask").
+
+---
+
+## How to read this pack
+
+Read in order for the full narrative, or jump to the doc that matches your role.
+
+| # | Document | Read this if you want… | Primary audience |
+|---|----------|------------------------|------------------|
+| — | [`README.md`](README.md) | The 60-second orientation (this file) | Everyone |
+| 01 | [`01-executive-business-case.md`](01-executive-business-case.md) | The core argument, the ask, and the return | Approvers / execs |
+| 02 | [`02-market-strategy.md`](02-market-strategy.md) | Why-now, the X-Arch thesis, competition, TAM/segmentation | GTM strategy |
+| 03 | [`03-role-requirements.md`](03-role-requirements.md) | Exactly what a Field CTO seller is, and how the team is built | Sales HR / org design |
+| 04 | [`04-vertical-solution-map.md`](04-vertical-solution-map.md) | The vertical × architecture plays and proof points | SEs / vertical leads |
+| 05 | [`05-operating-model.md`](05-operating-model.md) | How the team engages, is enabled, and is measured | Sales ops / enablement |
+| 06 | [`06-financial-model.md`](06-financial-model.md) | Cost, revenue impact, ROI, payback, assumptions | Finance |
+| 07 | [`07-roadmap-risks.md`](07-roadmap-risks.md) | The phased rollout, milestones, and risk mitigations | Program lead |
+
+---
+
+## Scope at a glance
+
+**Architecture focus — the "3 + 1" thesis** (lead motions, not the entire portfolio):
+
+1. **Secure Networking** — Catalyst / Meraki / SD-WAN / Catalyst Center + Secure Firewall / ISE / XDR / Duo
+2. **Full-Stack Observability & Data** — Splunk (Platform, ES, ITSI, OT), ThousandEyes, AppDynamics
+3. **Resilience & Security Operations** — Splunk ES + Cisco XDR + SOAR (the post-Splunk crown jewel)
+4. **(+1) AI-Ready Infrastructure** — UCS / Nexus / AI PODs as a pull-through adjacency
+
+**Vertical focus — four, chosen for X-Arch attach + regulatory pull:**
+
+- **Transportation & Logistics** — distributed-site secure networking + IoT/asset visibility (Splunk) + transport-OT security (NIS2)
+- **Financial Services** — resilience, fraud, SecOps, observability (DORA / PCI DSS)
+- **Healthcare** — medical-device IoT security, observability, HIPAA
+- **Public Sector / Critical Infrastructure** — compliance, NERC-CIP / NIS2, SecOps modernization
+
+Full justification for these picks is in [`02-market-strategy.md`](02-market-strategy.md) and [`04-vertical-solution-map.md`](04-vertical-solution-map.md).
+
+---
+
+## Important notes on the numbers
+
+All financial figures in this pack are **illustrative and assumption-driven**. Every model exposes its inputs in an assumptions register so leadership can replace them with real Cisco/Splunk actuals. Nothing here should be read as reported Cisco financial data. See [`06-financial-model.md`](06-financial-model.md).
+
+## A word on OT safety
+
+Where the Transportation and Public Sector/Utilities motions touch operational technology and safety-instrumented systems (e.g., rail signaling, port/airport automation), this team operates **read-only, passive-acquisition, human-in-the-loop** — never writing configuration to control-layer assets. This is both a hard guardrail and a competitive differentiator (see [`04-vertical-solution-map.md`](04-vertical-solution-map.md) → "OT safety boundary").
