@@ -39,6 +39,7 @@ Read in order for the full narrative, or jump to the doc that matches your role.
 | 05 | [`05-operating-model.md`](05-operating-model.md) | How the team engages, is enabled, and is measured | Sales ops / enablement |
 | 06 | [`06-financial-model.md`](06-financial-model.md) | Cost, revenue impact, ROI, payback, assumptions | Finance |
 | 07 | [`07-roadmap-risks.md`](07-roadmap-risks.md) | The phased rollout, milestones, and risk mitigations | Program lead |
+| 08 | [`08-exec-deck-outline.md`](08-exec-deck-outline.md) | A ~15-slide exec deck outline mapping the whole pack | Presenter / execs |
 
 ---
 
