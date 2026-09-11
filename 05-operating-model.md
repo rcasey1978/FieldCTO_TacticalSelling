@@ -41,6 +41,32 @@ Each play is a packaged, reusable motion with a discovery script, a reference ar
 
 **Play maintenance:** the group lead and solution architects own the play library; each play is refreshed quarterly with new proof points and updated integration capabilities.
 
+### Play card format (each play is documented this way)
+
+Every play in the library follows one structure so any Field CTO or account team can run it consistently:
+
+| Field | Contents |
+|-------|----------|
+| **Trigger** | The business event that opens the play (breach, mandate, outage, AI build, renewal) |
+| **Buyer** | The executive(s) who own the outcome |
+| **Discovery questions** | 4–6 questions that surface the pain and quantify it |
+| **Reference architecture** | The multi-architecture solution pattern (diagram + components) |
+| **Value case** | The TCO/ROI/risk template and the metrics that move |
+| **Proof points** | Joint-solution references and demos to lead with |
+| **Objection handling** | The top 3 objections and responses |
+| **Extended team** | Which specialists to pull in and when |
+
+### Example play card — "Splunk-attach-to-network"
+
+- **Trigger:** a large Cisco networking estate with little/no Splunk; a resilience or visibility gap surfaces.
+- **Buyer:** CIO (operations/cost) and/or CISO (risk).
+- **Discovery questions:** "How much of your network do you have real-time visibility into?" · "When something breaks, how long to isolate whether it's network, app, or security?" · "What are you paying across your current monitoring/SIEM tools?" · "What can't you see today that you wish you could?"
+- **Reference architecture:** Cisco network telemetry → Splunk Platform/ITSI for operations + Splunk ES/XDR for security, with ThousandEyes for external path.
+- **Value case:** consolidation TCO + faster MTTR + risk reduction.
+- **Proof points:** Cisco+Splunk joint telemetry integrations; before/after MTTR references.
+- **Objection handling:** "We have a monitoring tool" → *one correlated view vs. many silos.* "Splunk is expensive" → *TCO of consolidation + value of the data you already generate.* "Not the right time" → *start with one high-pain domain and expand.*
+- **Extended team:** Splunk specialist (co-lead), networking SE, account exec.
+
 ## 3. Enablement & ramp
 
 A structured program closes the "conversant → proficient" gaps identified in the [skills matrix](03-role-requirements.md#3-skills--knowledge-matrix).
@@ -53,6 +79,17 @@ A structured program closes the "conversant → proficient" gaps identified in t
 | **Live with coaching** | 10+ | Own accounts with group-lead coaching | First opportunity framed |
 
 **Ongoing enablement:** monthly play refresh, quarterly vertical deep-dives, a shared win/loss library, and peer review of reference architectures. Leverage the existing Cisco + Splunk skill assets (the workspace's methodology skills for OT safety, Splunk ES/ITSI/OT, Cisco product integrations) as a technical backbone.
+
+**Foundation curriculum (modules):**
+
+| Module | Covers | Format |
+|--------|--------|--------|
+| Portfolio fluency | The "3 + 1" pillars end-to-end; how the pieces integrate | Workshop + lab |
+| Splunk synergy depth | Platform, ES, ITSI, OT; the attach plays | Hands-on lab |
+| Executive selling | Outcome framing, whiteboarding, value engineering | Practice + role-play |
+| Vertical immersion | Regs, economics, references for the primary vertical | Deep-dive + guest experts |
+| OT safety (OT verticals) | Read-only/passive, human-in-the-loop boundary | Required certification |
+| The plays | Running each play card; discovery scripts; objection handling | Certification |
 
 ## 4. Tooling
 
@@ -122,7 +159,20 @@ Principles from [`03`](03-role-requirements.md#6-compensation-philosophy-design-
 - Multi-year / multi-architecture contract value
 - Customer references and advisory relationships created
 
-**Attribution method:** every touched account is paired with a comparable **control account**; deltas (deal size, attach, win rate, velocity) are the primary evidence of the motion's value. The deal-desk influence ledger records the Field CTO's role in each opportunity.
+### KPI definitions (how each is calculated)
+
+| KPI | Definition / formula | Cadence |
+|-----|----------------------|---------|
+| **Influenced pipeline** | Σ open-opportunity value where the Field CTO is recorded as an influencer in the ledger | Monthly |
+| **Incremental bookings** | Bookings in touched accounts − bookings in matched control accounts (same period) | Quarterly |
+| **Architectures per deal** | Distinct architecture pillars in a won opportunity (target ≥ 3 on led deals) | Per deal |
+| **Splunk attach uplift** | Splunk attach rate (touched) − Splunk attach rate (control), in pts | Quarterly |
+| **Deal-size uplift** | (Avg deal size touched ÷ avg deal size control) − 1 | Quarterly |
+| **Win rate delta** | Win rate (touched X-Arch deals) − baseline win rate | Quarterly |
+| **Time-to-first-framing** | Days from account selection to first executive framing (target ≤ 30) | Per account |
+| **Executive relationships** | Count of net-new/deepened CxO relationships (advisory sessions held) | Monthly |
+
+**Attribution method:** every touched account is paired with a comparable **control account** (matched on size, vertical, and existing footprint); deltas (deal size, attach, win rate, velocity) are the primary evidence of the motion's value. The deal-desk influence ledger records the Field CTO's role in each opportunity, which prevents both over-claiming and disputes with BU teams.
 
 **Pilot success thresholds** (feed the Q3 gate in [`07`](07-roadmap-risks.md)):
 - Touched accounts show materially higher X-Arch attach and deal size than controls

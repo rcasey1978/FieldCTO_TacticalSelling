@@ -59,6 +59,19 @@ Proficiency scale: **1 = aware · 2 = conversant · 3 = proficient · 4 = expert
 
 **Coverage rule:** each Field CTO is **deep (3–4) in at least two** of the three technical pillars and **conversant (2+) in all**, plus **deep in one vertical**. The team as a whole must cover all pillars and all four verticals at expert level.
 
+### A week in the life (what "good" looks like)
+
+The role is roughly a third executive engagement, a third architecture/orchestration, and a third enablement/leverage — deliberately *not* dominated by any single deal's execution detail:
+
+| Time | Activity | Why it matters |
+|------|----------|----------------|
+| ~35% | CxO conversations, executive briefings, advisory sessions | Where X-Arch deals are framed and won |
+| ~35% | Designing reference architectures; orchestrating the extended team | Turns the frame into a buildable, closeable solution |
+| ~20% | Enabling account/BU teams; refreshing plays; peer review | Scales the motion beyond one person's calendar |
+| ~10% | Internal roadmap access, vertical research, references | Keeps credibility current |
+
+**A Field CTO is over-invested if** they are doing detailed POC configuration or single-product quoting — that is SE/BU-specialist work they should be orchestrating, not performing.
+
 ## 4. Leveling
 
 | Level | Title | Profile | Typical scope |
@@ -113,6 +126,27 @@ flowchart TB
 3. **Ramp program** — a structured enablement path (see [`05`](05-operating-model.md)) closes the "conversant → proficient" gaps across pillars.
 
 **Anti-patterns to screen out:** deep-but-narrow single-product experts with no business fluency; strong presenters with shallow technical depth; closers who won't share credit.
+
+### Interview scorecard (assess each candidate 1–4 against the competency pillars)
+
+| Dimension | What to probe | Evidence of a 4 (expert) |
+|-----------|---------------|---------------------------|
+| **Business & industry fluency** | "Walk me through the economics and top 3 risks of [their vertical]." | Names regulations, cost drivers, and operating pressures unprompted; frames tech as business outcome |
+| **Cross-architecture depth** | "Whiteboard a resilient architecture for [scenario] spanning network, data, and SOC." | Designs across ≥3 architectures live; explains trade-offs, not just products |
+| **Executive presence** | "Tell me about a CxO relationship you built and what came of it." | Concrete story of being invited back and shaping a roadmap |
+| **Orchestration & influence** | "Describe getting a cross-functional team to a win without authority." | Credits others; shows the mechanism, not heroics |
+| **Splunk / observability depth** | "How would you attach observability to an existing network estate?" | Fluent in the synergy play; connects data to outcomes |
+| **Values / share-credit** | "How do you handle credit on a team win?" | Instinctively additive; makes others better |
+
+**Hiring bar:** average ≥ 3 across dimensions, **≥ 4 on at least one of** business fluency or executive presence (the differentiators), and **no 1s** on cross-architecture depth or share-credit (disqualifiers).
+
+### 90-day onboarding (ties to the enablement ramp in [`05`](05-operating-model.md#3-enablement--ramp))
+
+| Days | Milestone | Deliverable |
+|------|-----------|-------------|
+| 0–30 | Portfolio + play fluency; vertical immersion | Pass play certification; account/control list drafted |
+| 30–60 | Shadow live deals; build first executive narrative | Deliver a mock CxO briefing; co-run a real framing |
+| 60–90 | Own accounts with coaching | First X-Arch opportunity framed and in pipeline |
 
 ## 8. RACI vs. existing teams
 

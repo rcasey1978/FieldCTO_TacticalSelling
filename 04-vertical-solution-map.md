@@ -44,6 +44,12 @@ Distributed secure-site networking + IoT/asset visibility in Splunk + digital-pl
 
 **Proof points to lead with:** distributed-site secure networking at scale; Splunk logistics operations visibility; passive, read-only transport-OT acquisition as a safety/trust differentiator; NIS2 critical-infrastructure alignment.
 
+**Field engagement kit:**
+- *Buyers:* COO / Head of Operations (throughput, uptime), CISO (ransomware, NIS2), CIO (distributed IT), Head of Digital (tracking/booking experience).
+- *Discovery questions:* "What does an hour of downtime at your busiest hub cost?" · "How long to inventory every connected asset across your sites today?" · "When a shipment stalls, can you see whether it's the network, the app, or the OT layer?" · "How are you evidencing NIS2 readiness?"
+- *Outcome hypotheses (illustrative):* cut mean-time-to-detect for logistics disruptions by >50%; reduce unplanned downtime cost; single pane across IT + OT + digital platform.
+- *Common objections → response:* "Our OT team won't allow monitoring" → *passive, read-only, human-in-the-loop; no controller ever touched.* "We already have a NOC tool" → *this correlates network + app + OT + security in one place, not four.*
+
 ---
 
 ## 2. Financial Services
@@ -69,6 +75,12 @@ ThousandEyes (internet/path) + AppDynamics (app) + Splunk (data/SOC) for full-st
 - SOC modernization: Splunk ES + XDR + automated response
 
 **Proof points to lead with:** full-stack observability across TE/AppD/Splunk; resilience-and-compliance reporting; consolidation TCO story vs. best-of-breed sprawl.
+
+**Field engagement kit:**
+- *Buyers:* CISO (threat + fraud), COO / Head of Operational Resilience (DORA), CIO (digital-channel uptime), Head of Fraud, CFO (consolidation TCO).
+- *Discovery questions:* "Can you produce DORA evidence on demand today, and at what effort?" · "When mobile banking degrades, how long to know whether it's the network, the app, or a provider?" · "How many tools sit between a fraud signal and an analyst decision?" · "What's your SIEM renewal timeline?"
+- *Outcome hypotheses (illustrative):* faster mean-time-to-resolution on digital-channel incidents; automated resilience evidence; reduced fraud-investigation cycle time; lower SOC tooling TCO through consolidation.
+- *Common objections → response:* "We're standardized on another SIEM" → *lead with the network + app context they can't get natively; land ES where the renewal creates a wedge.* "Observability is the app team's budget" → *frame at resilience/board level where the budget consolidates.*
 
 ---
 
@@ -96,6 +108,12 @@ Medical-device discovery & segmentation + clinical-application observability + H
 
 **Proof points to lead with:** device-visibility + segmentation joint story; patient-safety framing of uptime; privacy-by-design in the data/SOC layer.
 
+**Field engagement kit:**
+- *Buyers:* CISO (ransomware, HIPAA), CIO / CMIO (clinical-system uptime), Head of Biomed/Clinical Engineering (IoMT), Head of Patient Safety.
+- *Discovery questions:* "How complete is your connected medical-device inventory, and how is it segmented?" · "What happens to patient care if the EHR degrades for an hour?" · "Could you detect and contain ransomware before it reaches clinical systems?" · "How do you evidence HIPAA access controls?"
+- *Outcome hypotheses (illustrative):* full IoMT visibility + segmentation reducing attack surface; faster clinical-app incident resolution; contained ransomware blast radius; audit-ready HIPAA reporting.
+- *Common objections → response:* "We can't touch medical devices" → *passive discovery + network-based segmentation; no device agent required.* "Security slows clinicians" → *segmentation + observability improve uptime, which is patient safety.*
+
 ---
 
 ## 4. Public Sector / Critical Infrastructure
@@ -121,6 +139,12 @@ Passive OT/utility visibility (Cyber Vision) + segmentation + Splunk compliance/
 - Cross-IT/OT threat correlation
 
 **Proof points to lead with:** compliance-evidence automation; critical-infrastructure references; the safety-respecting OT acquisition model.
+
+**Field engagement kit:**
+- *Buyers:* CISO / Agency security lead, CIO, Head of Critical Infrastructure / Operations, Compliance/Audit lead.
+- *Discovery questions:* "Which mandate (NERC-CIP / NIS2 / national) drives your current program, and what's the deadline?" · "How much manual effort goes into producing compliance evidence?" · "Can you correlate IT and OT threats today?" · "What's the state of your SOC modernization?"
+- *Outcome hypotheses (illustrative):* automated compliance-evidence generation cutting audit prep effort; unified IT/OT threat visibility; modern SOC with faster detection/response.
+- *Common objections → response:* "Procurement mandates open competition" → *co-author the reference architecture and outcomes early; compete on integrated value, not boxes.* "OT is off-limits" → *passive, read-only acquisition aligned to the safety boundary below.*
 
 ---
 

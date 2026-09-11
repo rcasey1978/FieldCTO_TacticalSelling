@@ -24,6 +24,13 @@
 
 > Change A1–A13 and every table below recomputes. The model is intentionally simple and linear so leadership can stress-test it live.
 
+**Rationale for the key assumptions:**
+- **A8 (avg influenced deal size ~$1.9M):** an X-Arch deal spans 3+ architectures over multiple years; this is deliberately conservative for strategic accounts and should be raised if the focus set skews to marquee accounts.
+- **A9 (conversion ~33%):** only the *attributable* delta versus control counts as incremental — not all influenced pipeline. A third is a cautious enterprise close/attribution rate.
+- **A10 (gross margin 60%):** a blended placeholder across hardware, software, and Splunk subscription; the real number shifts the whole return and is the single most important input for finance to replace.
+- **A11–A12 (uplift deltas):** these are the *proof* of the motion — measured, not assumed — via matched control accounts. The Y1 targets should be set from each account's real baseline.
+- **A13 (ramp ~2 of 4 quarters):** senior hires plus enterprise sales cycles mean the first two quarters are mostly framing, not bookings.
+
 ---
 
 ## 1. Cost model (Year-1 pilot)
@@ -55,6 +62,20 @@
 | Influenced pipeline | ~$180M |
 | Incremental / accelerated bookings | ~$60M |
 | Incremental gross margin (A10) | ~$36M |
+
+### Bottom-up check — a single account (illustrative)
+
+To validate the top-down number, build it from one account and multiply. This is the calculation a Field CTO does per account in the value case.
+
+| Line | Logic | Illustrative |
+|------|-------|--------------|
+| Current annual spend (networking only) | Account record | $3.0M |
+| X-Arch expansion (Splunk ES + XDR + ThousandEyes, multi-year TCV) | The attach the Field CTO frames | +$3.0M |
+| New multi-architecture relationship value | Sum | ~$6.0M |
+| Incremental vs. control (attributable) | Delta a comparable untouched account would *not* have gained | ~$2.5M |
+| Incremental gross margin (A10 60%) | | ~$1.5M |
+
+**Scale-up:** if each Field CTO lands ~3 such outcomes across their focus set, 8 Field CTOs × 3 × ~$2.5M ≈ **$60M incremental bookings** — reconciling with the top-down model. Only ~4–5 such outcomes *for the entire team* are needed to clear break-even.
 
 ## 3. ROI & payback (Year-1 pilot)
 
@@ -99,6 +120,16 @@ Net Year-1 contribution ($M) as incremental bookings and gross margin vary. Cost
 | **$80M** | $34.6 | $38.6 | $42.6 | $46.6 |
 
 **Even the pessimistic corner** ($20M bookings, 50% margin) returns **+$4.6M net** — the pilot is profitable across essentially the entire plausible range.
+
+### Three named scenarios (narrative)
+
+| Scenario | What happens | Incremental bookings | Net contribution | Decision |
+|----------|--------------|---------------------:|-----------------:|----------|
+| **Conservative** | Slow ramp, only strongest accounts convert; attach uplift modest | ~$25M | ~$9M | Continue; tune targeting |
+| **Base (plan)** | Ramp as modeled; attach + deal-size deltas materialize | ~$60M | ~$31M | Expand per 3-year path |
+| **Upside** | Consolidation tailwind; multiple marquee accounts land multi-year | ~$90M | ~$46M | Accelerate hiring early |
+
+All three clear break-even; the difference is the *pace of scale*, not whether the pilot pays back. The Q3 gate ([`07`](07-roadmap-risks.md)) exists to catch the sub-conservative case early.
 
 ### Downside / stress case
 

@@ -12,6 +12,17 @@ A leadership-ready **executive business case** to fund and stand up the Field CT
 
 **Decision requested:** Approve a funded pilot (see [`01-executive-business-case.md`](01-executive-business-case.md) → "The Ask").
 
+### The one-screen summary
+
+| | |
+|---|---|
+| **What** | A thin, senior Field CTO seller group that leads cross-architecture (X-Arch) deals |
+| **Why now** | Cisco + Splunk portfolio is complete; consolidation + outcome-buying favor a single frame |
+| **The ask** | 12-person, 4-quarter funded pilot; ~$5.4M (illustrative) |
+| **The return** | ~$180M influenced pipeline, ~$60M incremental bookings, payback < 12 months (illustrative) |
+| **The safeguard** | Q3 go/expand/stop gate; downside bounded to the pilot spend |
+| **Proof** | Touched accounts vs. matched control accounts on attach, deal size, win rate |
+
 ---
 
 ## How to read this pack
@@ -58,3 +69,22 @@ All financial figures in this pack are **illustrative and assumption-driven**. E
 ## A word on OT safety
 
 Where the Transportation and Public Sector/Utilities motions touch operational technology and safety-instrumented systems (e.g., rail signaling, port/airport automation), this team operates **read-only, passive-acquisition, human-in-the-loop** — never writing configuration to control-layer assets. This is both a hard guardrail and a competitive differentiator (see [`04-vertical-solution-map.md`](04-vertical-solution-map.md) → "OT safety boundary").
+
+---
+
+## Glossary
+
+| Term | Meaning |
+|------|---------|
+| **X-Arch (cross-architecture)** | Selling an integrated outcome spanning multiple Cisco/Splunk architectures rather than a single product line |
+| **Field CTO seller** | A senior, business-fluent technologist who frames outcomes at the C-suite and orchestrates BU specialists to close multi-architecture deals |
+| **"3 + 1" thesis** | The lead architectures: Secure Networking, Observability & Data, Resilience & SecOps, plus AI-Ready Infrastructure as an adjacency |
+| **Influence credit** | Additive comp/credit for a Field CTO's role in a deal, on top of (not instead of) BU sellers' product credit |
+| **Influence ledger** | The deal-desk record of which opportunities a Field CTO influenced, used for attribution and comp |
+| **Control account** | A comparable untouched account paired with a touched one to measure the motion's incremental impact |
+| **Touched account** | A named account actively worked by a Field CTO |
+| **Attach / cross-attach** | Adding an adjacent architecture (esp. Splunk) to an existing footprint |
+| **OT / ICS / SIS** | Operational Technology / Industrial Control Systems / Safety-Instrumented Systems — governed by the read-only safety boundary |
+| **Go/expand/stop gate** | The Q3 decision point that continues, accelerates, or ends the pilot against success criteria |
+| **BU** | Business Unit (e.g., networking, security, observability product organizations) |
+| **DORA / NIS2 / NERC-CIP / HIPAA / PCI DSS** | Sector regulations that create C-suite resilience/compliance triggers |

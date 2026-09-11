@@ -17,6 +17,8 @@ Cisco sells one of the broadest technology portfolios in the world, and the Splu
 
 Net effect: smaller deal sizes, slower cross-sell, weaker C-suite relationships, and margin left with integrators.
 
+> **The cost of inaction (illustrative).** Take a strategic account currently buying ~$3M/yr of Cisco networking with no Splunk attach. In the siloed motion it renews flat and the observability/SOC budget goes to a competitor or an SI. In the X-Arch motion, a Field CTO reframes the account around cyber-resilience and lands Splunk ES + XDR + ThousandEyes on top of the network — turning a ~$3M renewal into a ~$5–6M multi-architecture, multi-year relationship. Multiply the *gap* between those two outcomes across ~50 strategic accounts and the "do nothing" path leaves nine figures of influenceable pipeline on the table each year. The whole point of the group is to close that gap deliberately rather than opportunistically. See the parameterized version in [`06-financial-model.md`](06-financial-model.md).
+
 ## 2. Why now (the post-Splunk window)
 
 The window to establish an outcome-led, cross-architecture motion is open **now** and closing:
@@ -40,6 +42,12 @@ This is deliberately **not** another product-overlay SE team. It is a thin layer
 ### The X-Arch thesis in one line
 
 > When one credible person frames the customer's outcome across three architectures, average deal size, cross-attach, and win rate all rise — and the customer relationship moves from vendor to strategic partner.
+
+### What it looks like in practice (illustrative vignette)
+
+*A large port operator has a board mandate for supply-chain resilience after a ransomware near-miss at a peer.* In the siloed motion, three separate Cisco/Splunk sellers would call on three different managers about switches, a firewall refresh, and a SIEM POC — three small, disconnected deals.
+
+In the X-Arch motion, the **Field CTO** secures a single session with the COO and CISO and frames one outcome: *"keep cargo moving even under attack."* From that frame they design one reference architecture — passive OT visibility across cranes and rail (Cyber Vision → Splunk), segmentation to contain ransomware (ISE/TrustSec), SD-WAN resilience across terminals, and a modern SOC (Splunk ES + XDR) — then pull in the networking seller, the security seller, and the Splunk specialist to detail and close each component. The result: a larger, multi-year, multi-architecture program the customer *co-authored*, with Cisco as the strategic partner instead of one of several suppliers. This is the pattern the group industrializes; the repeatable version lives in [`04-vertical-solution-map.md`](04-vertical-solution-map.md) and [`05-operating-model.md`](05-operating-model.md).
 
 ## 4. Focus (so the pilot can prove the model)
 

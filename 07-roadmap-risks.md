@@ -22,6 +22,7 @@ flowchart LR
 - Baseline the charter, comp model ([`05`](05-operating-model.md#6-compensation-design)), influence-ledger method, and KPI dashboard ([`05`](05-operating-model.md#7-kpi-framework)).
 - Confirm org placement (GTM-primary, CTO-dotted — see [`03`](03-role-requirements.md#5-coverage--org-model)).
 
+**Key deliverables:** signed charter; comp/credit model; KPI dashboard spec; influence-ledger design. **Owner:** exec sponsor + Chief Field CTO.
 **Exit criteria:** funded, led, chartered; metrics and comp defined.
 
 ### Phase 1 — Stand up (30–90 days)
@@ -30,6 +31,7 @@ flowchart LR
 - Run the enablement ramp (Foundation + vertical immersion + shadowing).
 - Publish the initial play library and reference-architecture standards.
 
+**Key deliverables:** staffed cohort; named-account + control list; play library v1; reference-architecture standards. **Owner:** Chief Field CTO.
 **Exit criteria:** team staffed; accounts + controls selected; first executive framings scheduled.
 
 ### Phase 2 — Prove (Q2–Q3)
@@ -37,6 +39,7 @@ flowchart LR
 - Frame X-Arch opportunities; produce reference architectures and value cases.
 - Track touched-vs-control deltas weekly; run the deal-desk influence ledger.
 
+**Key deliverables:** framed X-Arch opportunities; reference architectures + value cases; live touched-vs-control deltas. **Owner:** Field CTOs + deal desk.
 **Exit criteria:** pipeline building toward target; early attach/deal-size deltas visible.
 
 ### Q3 GATE — Go / expand / stop (decision point)
@@ -93,6 +96,17 @@ Likelihood/Impact: **L / M / H**.
 | R11 | **Key-person dependency** (small team) | M | M | Play library codifies knowledge; peer review; cross-vertical coverage | Group lead |
 | R12 | **Macro / budget freeze** shrinks enterprise deals | L | M | Consolidation-TCO play thrives in cost-pressure; diversify across 4 verticals | Group lead |
 
+### Early-warning indicators (watch these to act before a risk bites)
+
+| Risk | Leading signal to monitor | Trigger for action |
+|------|---------------------------|--------------------|
+| R1 Talent | Time-to-fill; ramp certification pass rate | >2 roles unfilled at 60 days → widen sourcing / adjust profile |
+| R2/R6 BU friction | BU-team sentiment pulse; ledger disputes | Rising disputes → revisit comp/credit rules |
+| R4 Attribution | % touched accounts with matched control | <80% matched → fix tracking before the gate |
+| R5 Ramp | Time-to-first-framing; opportunities framed/FCTO | Behind at 90 days → targeting review |
+| R9 Exec access | Executive relationships created/month | Flat → co-selling plan with account teams |
+| R8 Integration gaps | Deals stalled on product/integration gaps | Pattern emerges → escalate via CTO-dotted line |
+
 ---
 
 ## 4. Governance & reporting cadence
@@ -104,6 +118,21 @@ Likelihood/Impact: **L / M / H**.
 | Quarterly | Executive review with sponsors | KPI dashboard vs. targets; gate decisions |
 | Q3 | **Go/expand/stop gate** | Formal decision against success criteria |
 | Q4 | Pilot readout | ROI validation; scale recommendation |
+
+### Program RACI (who does what across the rollout)
+
+Legend: **R** = Responsible · **A** = Accountable · **C** = Consulted · **I** = Informed.
+
+| Activity | Exec sponsor | Chief Field CTO | Field CTOs | Deal desk / ops | Sales leadership |
+|----------|:---:|:---:|:---:|:---:|:---:|
+| Fund & charter the pilot | **A** | R | I | C | C |
+| Name group lead; set comp/metrics | **A** | C | I | C | R |
+| Staff cohort (internal-first) | I | **A/R** | C | I | C |
+| Select accounts + controls | I | **A** | R | R | C |
+| Run engagement lifecycle / plays | I | A | **R** | C | I |
+| Maintain influence ledger / attribution | I | C | C | **A/R** | I |
+| Q3 gate decision | **A** | R | I | C | R |
+| Scale decision (Year 2) | **A** | R | I | C | R |
 
 ---
 

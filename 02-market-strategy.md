@@ -84,6 +84,33 @@ We size the opportunity top-down and bottom-up, keeping every input visible for 
 3. A live business trigger (regulatory deadline, breach, modernization, M&A, AI build)
 4. Accessible C-suite / executive sponsor
 
+### Worked sizing example (illustrative — replace with real data)
+
+To show the method, not to assert real numbers. Every figure is a placeholder for leadership to calibrate against actual account data.
+
+| Step | Logic | Illustrative figure |
+|------|-------|---------------------|
+| Named accounts (pilot focus set) | 8 Field CTOs × 6 accounts | 48 |
+| Avg. current annual Cisco+Splunk spend / account | From account records | ~$4M |
+| Current combined spend across focus set | 48 × $4M | ~$192M/yr |
+| X-Arch expansion headroom / account | Untapped adjacent architectures + Splunk attach | +40–60% |
+| Addressable expansion across focus set | headroom applied | ~$80–115M |
+| Realistically influenced in Y1 (ramp-adjusted) | share reachable in year one | ~$180M pipeline → ~$60M bookings |
+
+The point: even a *small* named-account set carries enough cross-architecture headroom to justify the team many times over. The bottom-up, account-by-account version of this math is in [`06-financial-model.md`](06-financial-model.md#2-revenue-impact-model-year-1-pilot).
+
+### Executive buyers the motion targets
+
+X-Arch deals are won in the C-suite. The Field CTO is built to hold a peer conversation with each of these:
+
+| Buyer | What they own / fear | The X-Arch hook |
+|-------|----------------------|-----------------|
+| **CIO** | Operational reliability, cost-to-serve, modernization | "One integrated stack, fewer vendors, better visibility, lower TCO" |
+| **CISO** | Cyber risk, breach exposure, board reporting | "See and secure the whole estate — network to SOC — with resilience you can report to the board" |
+| **COO / Head of Operations** | Uptime, safety, throughput (esp. OT verticals) | "Keep operations running safely, with real-time visibility and no risk to control systems" |
+| **CDO / CTO** | Data strategy, AI readiness, digital experience | "Turn your network and operations data into insight and AI-ready pipelines" |
+| **CFO** (validator) | ROI, risk-adjusted spend, consolidation savings | "A funded consolidation with a hard TCO and resilience payback" |
+
 ## 7. Competitive framing
 
 The Field CTO motion is aimed squarely at the actors who currently own the strategic frame:
@@ -96,6 +123,10 @@ The Field CTO motion is aimed squarely at the actors who currently own the strat
 | **Hyperscalers / cloud-native stacks** | Bundle observability/security into cloud | Differentiate on hybrid, OT/edge, and the physical + industrial network they don't own |
 
 The recurring theme: whoever frames the architecture wins the budget. The Field CTO exists to make sure that is Cisco.
+
+**The SI dynamic (the biggest structural risk).** In most large accounts, a systems integrator or consultancy writes the multi-year reference architecture and then runs a "vendor-neutral" bake-off for each component. When that happens, Cisco is relegated to bidding on boxes and margin flows to the SI. The Field CTO's job is to co-author that architecture *with* the customer (and, where useful, *with* the SI as a delivery partner) so Cisco owns the frame rather than responds to it. Where an SI is entrenched, the counter-move is to bring a differentiated, integrated Cisco+Splunk outcome the SI cannot assemble from parts — and to make the Field CTO the customer's trusted technical advisor before the SI locks the design.
+
+**Displacement vs. greenfield.** Two motions, both valid: (1) *displacement* — reframe an incumbent point-product renewal into an integrated outcome (e.g., a standalone SIEM renewal becomes Splunk ES + XDR + network context); (2) *greenfield* — a new business trigger (AI build, regulatory deadline, M&A) creates net-new multi-architecture budget. The Field CTO qualifies which motion an account is in during the "Select & trigger" stage ([`05`](05-operating-model.md#1-engagement-lifecycle)).
 
 ## 8. Positioning vs. existing field roles (no overlap, pure leverage)
 
