@@ -2,6 +2,8 @@
 
 > **Summary.** A ~15-slide executive deck that mirrors this pack for a leadership funding decision. Each slide lists its headline (the one-line takeaway), the key content, the visual, and the source doc so a designer or presenter can build it fast. Keep the deck to the story; the pack is the appendix. All figures are illustrative — replace with real actuals before presenting (see [`06-financial-model.md`](06-financial-model.md)).
 
+> **Built deck available.** A ready-to-present PowerPoint generated from this outline — **`Field-CTO-XArch-Business-Case.pptx`** (24 slides: title + 15 core + appendix divider + 8 appendix) — is in the repo, with **full speaker notes embedded in each slide's notes pane**. To regenerate after edits: `python3 build_deck.py` (requires `python-pptx`: `pip3 install --user python-pptx`). The generator is [`build_deck.py`](build_deck.py).
+
 ---
 
 ## How to use this outline
