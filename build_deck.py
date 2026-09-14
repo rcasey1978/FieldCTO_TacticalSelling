@@ -108,6 +108,7 @@ def content_slide(kicker, headline, bullets, notes, visual=None, footer=None):
     shp(s, MSO_SHAPE.RECTANGLE, 0.6, 0.95, 1.4, 0.055, ACCENT)
     add_text(s, Inches(0.6), Inches(1.15), Inches(12.1), Inches(1.1),
              [[(headline, 27, TEXT, True)]])
+    shp(s, MSO_SHAPE.RECTANGLE, 0.6, 2.37, 12.13, 0.014, LINE)
     if visual is not None:
         panel_bg(s, 0.6, 2.55, 6.0, 4.3)
         add_text(s, Inches(0.9), Inches(2.78), Inches(5.4), Inches(3.9),
@@ -118,9 +119,11 @@ def content_slide(kicker, headline, bullets, notes, visual=None, footer=None):
         panel_bg(s, 0.6, 2.55, 12.1, 4.3)
         add_text(s, Inches(1.0), Inches(2.8), Inches(11.3), Inches(3.9),
                  bullets_para(bullets, 18), space_after=12)
-    add_text(s, Inches(0.6), Inches(7.02), Inches(12.1), Inches(0.35),
-             [[(footer or "Illustrative figures \u2014 replace with actuals before presenting.",
-                10, MUTED, False)]])
+    shp(s, MSO_SHAPE.RECTANGLE, 0.6, 6.96, 12.13, 0.012, LINE)
+    note = footer or "Illustrative figures \u2014 replace with actuals before presenting."
+    add_text(s, Inches(0.6), Inches(7.03), Inches(10.6), Inches(0.32),
+             [[("FIELD CTO \u00b7 X-ARCH SELLING", 9, MUTED, True),
+               ("      " + note, 9, MUTED, False)]])
     s.notes_slide.notes_text_frame.text = notes
     return s
 
@@ -239,16 +242,19 @@ def v_bars(s, l, t, w, h):
     maxv = 52; pad = 0.55
     add_text(s, Inches(l + 0.3), Inches(t + 0.12), Inches(w - 0.6), Inches(0.3),
              [[("Net profit by scenario ($M, illustrative)", 11, MUTED, False)]], align=PP_ALIGN.CENTER)
-    base_y = t + h - 0.7; top_y = t + 0.6; plot_h = base_y - top_y
+    base_y = t + h - 0.95; top_y = t + 0.55; plot_h = base_y - top_y
     n = len(data); slot = (w - 2 * pad) / n; bw = slot * 0.5
     for i, (lbl, val) in enumerate(data):
         bx = l + pad + i * slot + (slot - bw) / 2; bh = plot_h * (val / maxv); by = base_y - bh
         shp(s, MSO_SHAPE.RECTANGLE, bx, by, bw, bh, ACCENT if lbl == "Base" else ACCENT2)
         add_text(s, Inches(bx - 0.2), Inches(by - 0.34), Inches(bw + 0.4), Inches(0.3),
                  [[("$%dM" % val, 12, TEXT, True)]], align=PP_ALIGN.CENTER)
-        add_text(s, Inches(bx - 0.25), Inches(base_y + 0.06), Inches(bw + 0.5), Inches(0.3),
+        add_text(s, Inches(bx - 0.25), Inches(base_y + 0.05), Inches(bw + 0.5), Inches(0.3),
                  [[(lbl, 11, MUTED, False)]], align=PP_ALIGN.CENTER)
     conn(s, l + pad - 0.1, base_y, l + w - pad + 0.1, base_y, MUTED, 1.0)
+    add_text(s, Inches(l + 0.3), Inches(base_y + 0.42), Inches(w - 0.6), Inches(0.3),
+             [[("Break-even \u2248 $9M bookings (~5 deals) \u2014 every scenario clears it", 9.5, MUTED, False)]],
+             align=PP_ALIGN.CENTER)
 
 
 def v_team(s, l, t, w, h):
@@ -278,6 +284,39 @@ def v_gate(s, l, t, w, h):
              align=PP_ALIGN.CENTER)
 
 
+def v_window(s, l, t, w, h):
+    pad = 0.4
+    add_text(s, Inches(l + pad), Inches(t + 0.16), Inches(w - 2 * pad), Inches(0.28),
+             [[("THE POST-SPLUNK WINDOW", 10, MUTED, True)]])
+    tx = l + pad; tw = w - 2 * pad; ty = t + 1.2; th = 0.7; seg = tw / 4
+    stext(shp(s, MSO_SHAPE.RECTANGLE, tx, ty, seg, th, CHIP, LINE), "Splunk close", 10, MUTED, False)
+    stext(shp(s, MSO_SHAPE.RECTANGLE, tx + seg, ty, 2 * seg, th, ACCENT), "OPEN WINDOW \u2014 NOW", 12, BG)
+    stext(shp(s, MSO_SHAPE.RECTANGLE, tx + 3 * seg, ty, seg, th, CHIP, LINE), "Commoditized", 10, MUTED, False)
+    mx = tx + 2 * seg
+    add_text(s, Inches(mx - 1.3), Inches(ty - 0.82), Inches(2.6), Inches(0.3),
+             [[("First-mover advantage", 11, ACCENT, True)]], align=PP_ALIGN.CENTER)
+    shp(s, MSO_SHAPE.DOWN_ARROW, mx - 0.15, ty - 0.44, 0.3, 0.4, ACCENT)
+    add_text(s, Inches(tx), Inches(ty + th + 0.16), Inches(tw), Inches(0.28),
+             [[("FORCES PULLING IT FORWARD", 10, MUTED, True)]])
+    drivers = ["Portfolio", "Integrations", "Consolidate", "AI build-outs"]
+    dy = ty + th + 0.46; dw = (tw - 3 * 0.2) / 4
+    for i, d in enumerate(drivers):
+        stext(shp(s, MSO_SHAPE.ROUNDED_RECTANGLE, tx + i * (dw + 0.2), dy, dw, 0.62, CHIP, MUTED),
+              d, 11, TEXT, False)
+
+
+def v_appendix(badge, srclabel):
+    def draw(s, l, t, w, h):
+        cx = l + w / 2; bw = 1.7; bh = 1.4
+        stext(shp(s, MSO_SHAPE.ROUNDED_RECTANGLE, cx - bw / 2, t + 0.55, bw, bh, CHIP, ACCENT, 1.25),
+              badge, 40, ACCENT)
+        add_text(s, Inches(l + 0.4), Inches(t + 2.2), Inches(w - 0.8), Inches(0.4),
+                 [[("Reserve for Q&A", 15, MUTED, False)]], align=PP_ALIGN.CENTER)
+        stext(shp(s, MSO_SHAPE.ROUNDED_RECTANGLE, cx - 2.0, t + 3.0, 4.0, 0.62, PANEL, LINE),
+              "Source \u00b7 " + srclabel, 12, TEXT, False)
+    return draw
+
+
 def v_timeline(s, l, t, w, h):
     nodes = [("Approve", "Day 0"), ("+30d", "Lead \u00b7 charter \u00b7 comp"),
              ("+60d", "Cohort + accounts"), ("+90d", "First framings")]
@@ -304,6 +343,15 @@ add_text(s, Inches(0.8), Inches(3.25), Inches(11.7), Inches(1.2),
          [[("Field CTO X-Arch Selling", 40, TEXT, True)]])
 add_text(s, Inches(0.8), Inches(4.25), Inches(11.7), Inches(0.6),
          [[("Funding the motion that monetizes Cisco + Splunk", 20, MUTED, False)]])
+_loop = ["Sense", "Connect", "Secure", "Understand", "Act"]
+_cw, _gap = 1.85, 0.55
+_tot = len(_loop) * _cw + (len(_loop) - 1) * _gap
+_x0 = (13.333 - _tot) / 2
+for _i, _st in enumerate(_loop):
+    _x = _x0 + _i * (_cw + _gap)
+    stext(shp(s, MSO_SHAPE.ROUNDED_RECTANGLE, _x, 5.35, _cw, 0.6, CHIP, ACCENT, 1.0), _st, 13, ACCENT)
+    if _i < len(_loop) - 1:
+        shp(s, MSO_SHAPE.RIGHT_ARROW, _x + _cw + 0.08, 5.35 + 0.19, _gap - 0.16, 0.22, ACCENT)
 add_text(s, Inches(0.8), Inches(6.7), Inches(11.7), Inches(0.4),
          [[("Illustrative business case \u2014 figures are parameterized placeholders.", 11, MUTED, False)]])
 s.notes_slide.notes_text_frame.text = (
@@ -338,8 +386,7 @@ content_slide(
     "Urgency without hype. The integrations are real and fresh; consolidation and "
     "AI builds create cross-architecture entry points right now. First mover on the "
     "motion compounds. Source: 01 \u00a72.",
-    visual=v_chips(["Portfolio complete: edge \u2192 SOC", "Integrations: XDR+ES, TE+AppD, Cyber Vision+OT",
-                    "Vendor consolidation \u2192 C-suite frame", "AI build-outs pull all pillars forward"], cols=1))
+    visual=v_window)
 
 content_slide(
     "The differentiator",
@@ -466,58 +513,86 @@ content_slide(
     "upside. Ask for the yes. Source: 01 \u00a79; README one-screen summary.",
     visual=v_timeline)
 
-# ---- Appendix divider -----------------------------------------------------
-s = new_slide()
-add_text(s, Inches(0.8), Inches(3.0), Inches(11.7), Inches(1.0), [[("APPENDIX", 16, ACCENT, True)]])
-add_text(s, Inches(0.8), Inches(3.5), Inches(11.7), Inches(1.0),
-         [[("Detail held in reserve for Q&A", 30, TEXT, True)]])
-s.notes_slide.notes_text_frame.text = "Use these only if the room asks. Don't present them by default."
-
+# ---- Appendix -------------------------------------------------------------
+# (kicker, headline, bullets, notes, badge, source-label, TOC-label)
 APPX = [
     ("Appendix \u00b7 A1", "Role, competencies, and skills matrix",
      ["4 pillars: business, X-arch, exec presence, orchestration",
       "Deep in \u22652 pillars; conversant in all",
       "Deep in one vertical; team covers four"],
-     "Detail for HR/org-design questions. Source: 03 \u00a71\u20133."),
+     "Detail for HR/org-design questions. Source: 03 \u00a71\u20133.",
+     "A1", "03 \u00a71\u20133", "A1 \u00b7 Role & skills"),
     ("Appendix \u00b7 A2", "Org placement and RACI",
      ["GTM-primary; dotted line to CTO/eng",
       "Revenue-accountable AND BU-neutral",
       "Field CTO owns frame; AE owns account"],
-     "For 'where does it sit / who owns what' questions. Source: 03 \u00a75, \u00a78."),
+     "For 'where does it sit / who owns what' questions. Source: 03 \u00a75, \u00a78.",
+     "A2", "03 \u00a75, \u00a78", "A2 \u00b7 Org & RACI"),
     ("Appendix \u00b7 A3", "Per-vertical field engagement kits",
      ["Buyers, discovery, hypotheses, objections",
       "One kit per vertical (x4)",
       "Strategy \u2192 field-ready playbook"],
-     "For 'how do we actually sell this' questions. Source: 04 \u00a71\u20134."),
+     "For 'how do we actually sell this' questions. Source: 04 \u00a71\u20134.",
+     "A3", "04 \u00a71\u20134", "A3 \u00b7 Vertical kits"),
     ("Appendix \u00b7 A4", "OT safety boundary",
      ["Read-only / passive acquisition only",
       "Never write to PLC/HMI/DCS/RTU/SIS",
       "Guardrail AND trust-winning differentiator"],
-     "For OT/operations stakeholders. Source: 04 OT safety boundary."),
+     "For OT/operations stakeholders. Source: 04 OT safety boundary.",
+     "A4", "04 OT boundary", "A4 \u00b7 OT safety"),
     ("Appendix \u00b7 A5", "Assumptions register and 3-year P&L",
      ["Every input (A1\u2013A13) editable",
       "3-year scale path; improving ROI",
       "Structure holds; only inputs change"],
-     "For finance deep-dives. Source: 06 \u00a70, \u00a74."),
+     "For finance deep-dives. Source: 06 \u00a70, \u00a74.",
+     "A5", "06 \u00a70, \u00a74", "A5 \u00b7 P&L"),
     ("Appendix \u00b7 A6", "Compensation design",
      ["Influence credit is additive \u2014 BUs keep 100%",
       "50% bookings / 20% attach / 15% leading / 15% MBO",
       "Deal desk arbitrates via the ledger"],
-     "For comp/quota questions. Source: 05 \u00a76."),
+     "For comp/quota questions. Source: 05 \u00a76.",
+     "A6", "05 \u00a76", "A6 \u00b7 Comp"),
     ("Appendix \u00b7 A7", "Competitive framing",
      ["Point vendors, SIEM, SIs, hyperscalers",
       "SI dynamic is the biggest structural risk",
       "Whoever frames the architecture wins"],
-     "For competitive/positioning questions. Source: 02 \u00a77."),
+     "For competitive/positioning questions. Source: 02 \u00a77.",
+     "A7", "02 \u00a77", "A7 \u00b7 Competitive"),
     ("Appendix \u00b7 A8", "Full risk register + early warnings",
      ["12 risks: likelihood, impact, mitigation, owner",
       "Leading signals with action triggers",
       "Bounded downside via the Q3 gate"],
-     "For risk/governance questions. Source: 07 \u00a73."),
+     "For risk/governance questions. Source: 07 \u00a73.",
+     "A8", "07 \u00a73", "A8 \u00b7 Risk register"),
 ]
-for kicker, headline, bullets, notes in APPX:
-    content_slide(kicker, headline, bullets, notes,
+
+# Appendix divider with a contents grid
+s = new_slide()
+shp(s, MSO_SHAPE.RECTANGLE, 0.6, 0.9, 0.14, 1.35, ACCENT)
+add_text(s, Inches(0.95), Inches(0.95), Inches(11.7), Inches(0.4), [[("APPENDIX", 13, ACCENT, True)]])
+add_text(s, Inches(0.95), Inches(1.35), Inches(11.7), Inches(0.9),
+         [[("Detail held in reserve for Q&A", 30, TEXT, True)]])
+_cols, _cw2, _ch2 = 4, None, 0.85
+_gx, _gy = 0.8, 3.1
+_cw2 = (11.73 - 3 * 0.3) / 4
+for _i, _row in enumerate(APPX):
+    _lbl = _row[6]
+    _x = _gx + (_i % _cols) * (_cw2 + 0.3)
+    _y = _gy + (_i // _cols) * (_ch2 + 0.35)
+    stext(shp(s, MSO_SHAPE.ROUNDED_RECTANGLE, _x, _y, _cw2, _ch2, CHIP, MUTED), _lbl, 12, TEXT, False)
+s.notes_slide.notes_text_frame.text = "Use these only if the room asks. Don't present them by default."
+
+for kicker, headline, bullets, notes, badge, srclabel, _toc in APPX:
+    content_slide(kicker, headline, bullets, notes, visual=v_appendix(badge, srclabel),
                   footer="Appendix \u2014 reserve for Q&A. Illustrative figures.")
+
+# ---- Page numbers (skip title slide) --------------------------------------
+_total = len(prs.slides._sldIdLst)
+for _i, _s in enumerate(prs.slides):
+    if _i == 0:
+        continue
+    add_text(_s, Inches(11.5), Inches(7.03), Inches(1.23), Inches(0.3),
+             [[("%d / %d" % (_i + 1, _total), 10, MUTED, False)]], align=PP_ALIGN.RIGHT)
 
 prs.save("Field-CTO-XArch-Business-Case.pptx")
 print("Wrote Field-CTO-XArch-Business-Case.pptx with", len(prs.slides._sldIdLst), "slides")
