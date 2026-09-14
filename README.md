@@ -43,6 +43,7 @@ Read in order for the full narrative, or jump to the doc that matches your role.
 | 09 | [`09-black-ops-seller.md`](09-black-ops-seller.md) | The Black Ops "tiger team" mode for breaking open the hardest accounts | Sales leadership |
 | 10 | [`10-example-engagement-aviation.md`](10-example-engagement-aviation.md) | A worked airport-operator engagement, end to end | Everyone / field |
 | 11 | [`11-account-team-engagement.md`](11-account-team-engagement.md) | How account teams engage the Field CTO: qualification, intake interview, value Q&A, RACI | Account teams / field |
+| 12 | [`12-cross-stakeholder-value.md`](12-cross-stakeholder-value.md) | The cross-stakeholder motion: buying-group map, outcome cascade, coalition mechanics | Field CTOs / field |
 
 ---
 

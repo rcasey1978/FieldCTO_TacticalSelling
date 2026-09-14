@@ -101,7 +101,7 @@ The point: even a *small* named-account set carries enough cross-architecture he
 
 ### Executive buyers the motion targets
 
-X-Arch deals are won in the C-suite. The Field CTO is built to hold a peer conversation with each of these:
+X-Arch deals are won in the C-suite. The Field CTO is built to hold a peer conversation with each of these — and, crucially, to align *several of them at once* around one outcome (the cross-stakeholder motion in [`12-cross-stakeholder-value.md`](12-cross-stakeholder-value.md)):
 
 | Buyer | What they own / fear | The X-Arch hook |
 |-------|----------------------|-----------------|
