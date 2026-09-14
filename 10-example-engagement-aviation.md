@@ -130,7 +130,7 @@ This was decisive in winning the Head of Engineering's trust — the very stakeh
 | Three siloed Cisco/Splunk conversations | One co-authored reference architecture |
 | Cisco bidding on components late | Cisco co-owns the frame; SI repositioned as delivery |
 | No executive access | CEO/COO/CISO engaged via executive sponsor |
-| Slow, opportunistic | Time-boxed breakthrough, then handed back to scale |
+| Slow, opportunistic | Focused breakthrough that ignited durable, multi-year growth, then handed back to scale |
 
 ## 7. Illustrative outcome & deal shape
 
@@ -140,7 +140,7 @@ This was decisive in winning the Head of Engineering's trust — the very stakeh
 | Architectures in the deal | 3–4 (Networking, Observability/Data, SecOps, +Edge/AI) |
 | Relationship shift | Supplier → strategic resilience partner |
 | Expansion path | Cargo operations; second airport in the group; biometric passenger flow |
-| Mission time box | ~90-day breakthrough → sustained close & expand |
+| Mission window | ~90-day breakthrough → sustained, durable multi-year growth |
 
 ## 8. Objections handled
 
