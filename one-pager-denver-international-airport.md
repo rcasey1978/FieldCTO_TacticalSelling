@@ -1,50 +1,47 @@
 # Denver International Airport — Executive One-Pager
 
-> **From "keeping the lights on" to an AI-Ready Airport.** A stalled Cisco Spaces pilot was reframed by the Field CTO motion into a multi-year, cross-architecture **digital-transformation partnership**: Cisco Spaces + Splunk turn Wi-Fi into **real-time spatial intelligence** that grows concession revenue and drives operational efficiency — expanding Cisco from a vendor into a **trusted partner**.
+> **From a stalled Cisco Spaces pilot to an AI-Ready Airport.** The Field CTO reframed a dead-end dwell-time pilot into a multi-year, cross-architecture transformation: **Cisco Spaces + Splunk** turn Wi-Fi into **real-time spatial intelligence** that grows concession revenue and operational efficiency — expanding Cisco from a vendor into a **trusted partner** and supporting DEN's **Vision 100** growth.
 
-**Customer:** Denver International Airport (DEN)  ·  **Motion:** Field CTO X-Arch (cross-architecture, outcome-led)  ·  **Status:** Active & expanding
+**Customer:** Denver International Airport (DEN)  ·  **Motion:** Field CTO X-Arch (outcome-led)  ·  **Platforms:** Cisco Spaces + Splunk (on Cisco wireless → SDA)  ·  **Status:** Active & expanding
 
 ---
 
-## Situation
-- DEN was running a **Cisco Spaces pilot that had stalled** — exploring passenger **dwell time** for a concessions program and marketing campaign, with no clear path forward.
-- The **account team brought in the Field CTO** to meet the **CTO**, review the airport authority's initial use cases, and find the larger business frame ([engagement motion, `11`](11-account-team-engagement.md)).
+## Situation → reframe
+- A **Cisco Spaces pilot had stalled** (passenger dwell time for a concessions & marketing campaign). The **account team brought in the Field CTO** to meet the **CTO** and review the airport authority's initial use cases.
+- We reframed a **tactical pilot** into a **business-outcome program** — passenger flow & spatial intelligence across the concourses — moving DEN from **"keeping the lights on"** to a **digital-transformation journey**: an **Airport of the Future / AI-Ready Airport**.
 
-## The reframe
-- Moved from a **tactical point pilot** to a **business-outcome program**: understand **passenger flow and spatial intelligence** across the concourses.
-- Solve the initial use cases with **Cisco Spaces**, and build the **analytics platform on Splunk** — shifting DEN from **"keeping the lights on"** to a **digital-transformation journey** that modernizes all infrastructure: an **Airport of the Future** and an **AI-Ready Airport**.
-
-## Stakeholders (the coalition)
-| Stakeholder | Role in the deal |
-|-------------|------------------|
-| **CTO** | Program owner / champion |
-| **CFO** | Value & investment validator |
-| **Sr. Director, Infrastructure** | Technical owner |
-| **Concessions** | Business-outcome owner (revenue) |
-
-**Shared outcome:** turn the network into a source of real-time spatial intelligence that grows revenue and drives efficiency.
+## Stakeholders
+**CTO** (champion) · **CFO** (validator) · **Sr. Director, Infrastructure** (technical owner) · **Concessions** (revenue owner).
+**Shared outcome:** turn the network into real-time spatial intelligence that grows revenue and drives efficiency.
 
 ## The cross-architecture solution
 | Pillar | What DEN gets |
 |--------|---------------|
-| **Secure Networking** | Cisco Spaces on Cisco wireless; modernization of campus **wireless + wired toward SDA** to enhance operations |
-| **Observability & Data** | **Splunk** analytics platform turning Wi-Fi location data into **real-time spatial intelligence** |
-| **AI-Ready Infrastructure** | The data + modern-infra foundation for the **AI-Ready Airport** |
-| **OT (in progress)** | OT workstream underway; the **read-only / passive / human-in-the-loop** boundary applies as OT comes into scope ([`04` OT boundary](04-vertical-solution-map.md#ot-safety-boundary-mandatory-for-transportation--public-sectorutilities)) |
+| **Secure Networking** | Cisco Spaces on Cisco wireless; campus **wireless + wired → SDA** modernization |
+| **Observability & Data** | **Splunk** analytics turning Wi-Fi location data into real-time spatial intelligence |
+| **AI-Ready Infrastructure** | The data + modern-infra foundation for the AI-Ready Airport |
+| **OT (in progress)** | Follow-on workstream; **read-only / passive / human-in-the-loop** boundary applies |
 
-## Outcomes
-- **Real-time spatial intelligence** from Wi-Fi + Splunk across concourse areas.
-- **Revenue optimization** (concessions) and **operational efficiency** across the organization.
-- *Specific KPIs to be quantified with DEN as the program scales.*
+## Quantified outcomes  *(illustrative — validate with DEN)*
+Anchored to public DEN data: **82.4M passengers (2025)**, an airport built for 50M pursuing **Vision 100**; **$608M** non-airline revenue (2024).
+
+| Value lever | Illustrative annual value |
+|-------------|---------------------------|
+| Concession uplift (dwell-time / spatial, +2%) | **+$1.8M airport** (+$9.9M concessionaire sales) |
+| Marketing / advertising yield (+5%) | **+$1.0M** |
+| Operational efficiency (passenger flow, +1.5%) | **+$2.3M** |
+| Observability / tool TCO (Splunk consolidation, −20%) | **+$1.0M** |
+| Capacity deferral (Vision 100) | size with DEN |
+| **Airport-side recurring total** | **≈ $6M/yr** (range $4–8M) |
+
+*Parameters (illustrative): spend/enplaned pax $12 · airport rent capture 18% · advertising base $20M · addressable ops base $150M · monitoring TCO base $5M — replace with DEN actuals in a half-day value workshop.*
 
 ## Durable growth for Cisco
-- Positioned Cisco to **solve business outcomes** → shift from **vendor to trusted partner**.
-- **Expanded the existing Enterprise Agreement (EA) to include Splunk and Cisco Spaces.**
-- Kicked off **wireless + wired (SDA) modernization** — a multi-year transformation runway ([the motion, `05`](05-operating-model.md)).
+- **EA expanded to include Splunk + Cisco Spaces**; multi-year **wireless + wired (SDA)** modernization runway.
+- **Vendor → trusted partner** — value measured in DEN's terms (revenue, efficiency, capacity). Proof: the airport **renamed the program the "Ryan Casey project."**
 
-## Why we won
-- The Field CTO **reframed a dead-end pilot into an executive, outcome-led program** — one architecture, one relationship.
-- Trusted-advisor credibility: the airport **renamed the program the "Ryan Casey project."**
+## Next step
+Half-day **value workshop** (CTO, CFO, Infrastructure, Concessions) to replace the illustrative inputs with DEN actuals → a committed, board-ready business case.
 
 ---
-*Internal account brief. Narrative reflects the engagement as related by the account team; specific metrics to be validated with DEN. Consistent with the Field CTO X-Arch motion and the cross-stakeholder, durable-growth approach across the pack ([`README.md`](README.md)).*
+*Internal account brief. Narrative reflects the engagement as related by the account team; public figures cited (flydenver.com, 2026; City of Denver Auditor, 2026); uplift percentages are benchmarks to validate with DEN — not reported DEN financials. Consistent with the Field CTO X-Arch motion and financial approach ([`README.md`](README.md), [`06-financial-model.md`](06-financial-model.md)).*
