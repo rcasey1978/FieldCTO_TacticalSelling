@@ -83,7 +83,7 @@ The Field CTO runs this structured interview **with the account team** (AE + SE)
 - What's the renewal/expansion timing we can anchor to?
 
 ### 4.5 Stakeholders & decision process
-- Map the buying group: economic buyer, technical buyer, champion, blockers.
+- Map the buying group: economic buyer, technical buyer, champion, blockers (use the full map and coalition method in [`12-cross-stakeholder-value.md`](12-cross-stakeholder-value.md)).
 - How do they buy (direct, SI-led, framework/consortium, procurement cycle)?
 - Who can we get to, and who do we need help reaching?
 
