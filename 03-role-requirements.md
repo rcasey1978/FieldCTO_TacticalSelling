@@ -82,7 +82,7 @@ The role is roughly a third executive engagement, a third architecture/orchestra
 
 The pilot staffs primarily at **L1** with **one L3** group lead; L2 emerges as the team matures.
 
-**Black Ops deployment mode.** The most senior tier (L2 Principal / L3) can be convened as an elite, time-boxed **tiger team** — the "Black Ops" mode — that parachutes into the hardest, highest-value accounts to break them open, then hands them back to sustained coverage. This is an *operating mode drawn from the same talent pool*, not (initially) separate headcount. Full definition, deployment criteria, and RACI in [`09-black-ops-seller.md`](09-black-ops-seller.md); a worked application in [`10-example-engagement-aviation.md`](10-example-engagement-aviation.md).
+**Black Ops deployment mode.** The most senior tier (L2 Principal / L3) can be convened as an elite, mission-focused **tiger team** — the "Black Ops" mode — that parachutes into the hardest, highest-value accounts to break them open and ignite durable growth, then hands them back to sustained coverage. This is an *operating mode drawn from the same talent pool*, not (initially) separate headcount. Full definition, deployment criteria, and RACI in [`09-black-ops-seller.md`](09-black-ops-seller.md); a worked application in [`10-example-engagement-aviation.md`](10-example-engagement-aviation.md).
 
 ## 5. Coverage & org model
 

@@ -113,7 +113,7 @@ A: I show up as a peer technologist with a point of view on *their* business pro
 A: I reframe from "another tool" to "one correlated view across network, apps, and security," and I co-own the architecture *with* the SI instead of ceding it — protecting our margin and strategic position.
 
 **Q: What actually happens in the first 30 days?**
-A: Intake interview, a joint plan, and a booked executive-framing conversation. If the account is stuck or huge, I can convene [Black Ops](09-black-ops-seller.md) — a time-boxed tiger team — to break it open, then hand it back to you.
+A: Intake interview, a joint plan, and a booked executive-framing conversation. If the account is stuck or huge, I can convene [Black Ops](09-black-ops-seller.md) — a focused tiger team — to break it open and set up durable growth, then hand it back to you.
 
 **Q: How do you prove you added value and didn't just add a person to the deal?**
 A: Every touched account is compared to a matched **control account** on attach rate, deal size, win rate, and velocity ([`05` §7](05-operating-model.md#7-kpi-framework)). The delta is the proof.
