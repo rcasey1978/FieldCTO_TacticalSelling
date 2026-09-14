@@ -192,6 +192,18 @@ content_slide(
     "orchestration-first. Source: 01 \u00a73; 03 \u00a71.")
 
 content_slide(
+    "Extending the model",
+    "Black Ops: an elite tiger team for the accounts nobody else can crack",
+    ["The Field CTO group runs the marathon; Black Ops runs the sprint",
+     "Parachutes into stalled whales / SI-locked / narrow-window accounts",
+     "Mission-scoped, time-boxed (60\u2013120 days); breaks the account open, then HANDS BACK",
+     "Ethical and above-board; all OT-safety and read-only guardrails still apply"],
+    "Introduce the tiger team as a mode, not separate headcount. Emphasize two "
+    "things: it always hands the account back (no hoarding), and 'Black Ops' is a "
+    "special-forces posture metaphor \u2014 fully ethical, nothing hidden from the "
+    "customer. Source: 09.")
+
+content_slide(
     "In practice",
     "One frame, one architecture, one strategic relationship",
     ["Siloed: 3 sellers call on 3 managers about 3 disconnected deals",
@@ -234,6 +246,18 @@ content_slide(
     "Show this is systematized, not dependent on a few heroes. The play library "
     "codifies the knowledge so the motion scales and survives key-person risk. "
     "Source: 05 \u00a71\u20132.")
+
+content_slide(
+    "Worked example \u00b7 aviation",
+    "Airport operator: Black Ops broke open a stalled 'smart airport' program",
+    ["OT-heavy hub (baggage, jet bridges, airfield lighting) + NIS2 + Terminal 4 build",
+     "SI was about to lock the architecture \u2014 Black Ops criteria met, pod convened",
+     "Executive breakthrough reframed it as board-level operational resilience",
+     "One X-Arch architecture: passive OT + segmentation + SD-WAN + modern SOC + edge AI",
+     "Won OT engineering's trust via read-only, human-in-the-loop \u2014 then handed back to scale"],
+    "The end-to-end proof. Walk the transformation: stalled + SI-locked \u2192 executive "
+    "breakthrough \u2192 one co-authored architecture \u2192 multi-year program. Stress the OT "
+    "safety boundary as the trust-winner with airport engineering. Source: 10.")
 
 content_slide(
     "The return",
