@@ -121,7 +121,7 @@ flowchart TB
     fieldcto <--> partners
 ```
 
-- **Account teams:** the Field CTO is their senior technical strategist for the biggest cross-arch plays; the AE keeps account ownership and commercials.
+- **Account teams:** the Field CTO is their senior technical strategist for the biggest cross-arch plays; the AE keeps account ownership and commercials. How account teams qualify, request, and work with the group is detailed in [`11-account-team-engagement.md`](11-account-team-engagement.md).
 - **BU specialists & SEs:** the Field CTO frames and orchestrates; specialists detail and close their component and keep their credit.
 - **Splunk specialists:** co-own the cross-attach strategy (see RACI in [`03`](03-role-requirements.md#8-raci-vs-existing-teams)).
 - **CX:** engaged early so the "land & expand" adoption motion is designed in, not bolted on.

@@ -42,6 +42,7 @@ Read in order for the full narrative, or jump to the doc that matches your role.
 | 08 | [`08-exec-deck-outline.md`](08-exec-deck-outline.md) | A ~15-slide exec deck outline mapping the whole pack | Presenter / execs |
 | 09 | [`09-black-ops-seller.md`](09-black-ops-seller.md) | The Black Ops "tiger team" mode for breaking open the hardest accounts | Sales leadership |
 | 10 | [`10-example-engagement-aviation.md`](10-example-engagement-aviation.md) | A worked airport-operator engagement, end to end | Everyone / field |
+| 11 | [`11-account-team-engagement.md`](11-account-team-engagement.md) | How account teams engage the Field CTO: qualification, intake interview, value Q&A, RACI | Account teams / field |
 
 ---
 
